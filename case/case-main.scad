@@ -24,23 +24,23 @@ module case () {
     union () {
         // one box
         translate([2*unit, 3*unit, 0])
-            chamber(1, unit, depth, wall);
+            chamber(1, unit, case_depth, wall);
 
         // one' box
         translate([2*unit, (4*unit),0])
-            chamber(1, unit, depth, wall);
+            chamber(1, unit, case_depth, wall);
 
         // two box
         translate([(0*unit), (3*unit), 0])
-            chamber(2, unit, depth, wall);
+            chamber(2, unit, case_depth, wall);
 
         // three box
         translate([0*unit, 0*unit, 0])
-            chamber(3, unit, depth, wall);
+            chamber(3, unit, case_depth, wall);
 
         // five box
         translate([3*unit, 0, 0])
-            chamber(5, unit, depth, wall);
+            chamber(5, unit, case_depth, wall);
     }
 }
 
