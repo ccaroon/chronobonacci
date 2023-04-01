@@ -16,7 +16,7 @@ wall = 1;
 sh_in_dia = 3.0;
 sh_out_dia = sh_in_dia + 1.5;
 sh_height = 5;
-sh_wall_adj = wall+(sh_out_dia-sh_in_dia)+.75;
+sh_wall_adj = wall+(sh_out_dia-sh_in_dia)+.74;
 
 sh_positions = [
     // top-left
