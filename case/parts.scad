@@ -30,19 +30,17 @@ module screw_hole(outer_dia, inner_dia, height) {
     }
 }
 
-module top_lip() {
+module top_lip(width, height) {
     depth = 2.75;
 
-    // Lip
-    // translate([0,0,case_depth])
     difference() {
-        cube([case_width, case_height, depth]);
+        cube([width, height, depth]);
 
         translate([-1,1,-1])
-        cube([case_width+2, case_height-2, depth]);
+        cube([width+2, height-2, depth]);
 
         translate([-1,2,-1])
-        cube([case_width+2, case_height-4, depth+2]);
+        cube([width+2, height-4, depth+2]);
     }
 }
 

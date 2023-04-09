@@ -5,7 +5,7 @@ include <units.scad>
 unit = 1.55*cm;
 
 // case dims
-case_depth  = 1*cm;
+case_depth  = 3.5*unit;
 case_width  = 8*unit;
 case_height = 5*unit;
 

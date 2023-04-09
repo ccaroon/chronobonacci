@@ -41,6 +41,10 @@ module case () {
         // five box
         translate([3*unit, 0, 0])
             chamber(5, unit, case_depth, wall);
+
+        // top lip
+        translate([0,0,case_depth])
+            top_lip(case_width, case_height);
     }
 }
 

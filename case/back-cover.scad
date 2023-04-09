@@ -6,7 +6,7 @@ use <parts.scad>
 include <units.scad>
 include <variables.scad>
 
-back_depth = .75*cm;
+back_depth = 1.5*cm;
 
 for (pos = sh_positions) {
     translate(pos)
