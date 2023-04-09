@@ -1,4 +1,7 @@
 // Back of the case that covers the electronics
+// TODO:
+// * Add hole for power connector
+// ----------------------------------------------------------------------------
 use <base-modules.scad>
 include <units.scad>
 include <variables.scad>

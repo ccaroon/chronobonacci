@@ -30,6 +30,22 @@ module screw_hole(outer_dia, inner_dia, height) {
     }
 }
 
+module top_lip() {
+    depth = 2.75;
+
+    // Lip
+    // translate([0,0,case_depth])
+    difference() {
+        cube([case_width, case_height, depth]);
+
+        translate([-1,1,-1])
+        cube([case_width+2, case_height-2, depth]);
+
+        translate([-1,2,-1])
+        cube([case_width+2, case_height-4, depth+2]);
+    }
+}
+
 module neo_holes(unit, thickness) {
     hole_dia = 1.5;
     offset = unit / 2;
