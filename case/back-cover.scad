@@ -2,7 +2,7 @@
 // TODO:
 // * Add hole for power connector
 // ----------------------------------------------------------------------------
-use <base-modules.scad>
+use <parts.scad>
 include <units.scad>
 include <variables.scad>
 
