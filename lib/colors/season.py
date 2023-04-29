@@ -17,28 +17,28 @@ class Season:
 
     SEASONS = {
         "spring": (
-            ColorFactory.hex("0x00FF19"), # green
-            ColorFactory.hex("0xFF0096"), # pink
-            ColorFactory.hex("0x2800FF"), # blue
+            ColorFactory.hex("0x00FF19", name="green"), # green
+            ColorFactory.hex("0xFF0096", name="pink"),  # pink
+            ColorFactory.hex("0x2800FF", name="blue"),  # blue
             ColorFactory.get("white")
         ),
         "summer": (
             ColorFactory.get("yellow"),
-            ColorFactory.hex("0x3232FF"), # blue
+            ColorFactory.hex("0x3232FF", name="blue"), # blue
             ColorFactory.get("green"),
             ColorFactory.get("indigo")
         ),
         "fall": (
             ColorFactory.get("red"),
-            ColorFactory.hex("0xF0FF00"), # yellow
-            ColorFactory.hex("0xFF6400"), # orange
-            ColorFactory.hex("0x3d3202"), # dirty-yellow-orange'ish
+            ColorFactory.hex("0xF0FF00", name="yellow"), # yellow
+            ColorFactory.hex("0xFF6400", name="orange"), # orange
+            ColorFactory.hex("0x3d3202", name="yellorange"), # dirty-yellow-orange'ish
         ),
         "winter": (
             ColorFactory.get("white"),
-            ColorFactory.hex("0x0080FF"), # blue'ish
+            ColorFactory.hex("0x0080FF", name="blue'ish"), # blue'ish
             ColorFactory.get("cyan"),
-            ColorFactory.hex("0x7f74ff") # grey'ish
+            ColorFactory.hex("0x7f74ff", name="grey'ish") # grey'ish
         )
     }
 

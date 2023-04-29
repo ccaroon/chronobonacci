@@ -12,6 +12,8 @@ class Color:
         self.__blue = blue
         self.__white = white
 
+        self.name = kwargs.get('name', None)
+
     def as_tuple(self, rgbw=False):
         color_tuple = None
         if rgbw:
@@ -34,4 +36,4 @@ class Color:
         return self.as_tuple(True) == value.as_tuple(True)
 
     def __str__(self) -> str:
-        return str(self.as_tuple())
+        return "%s%s" % (self.name if self.name else "", str(self.as_tuple()))

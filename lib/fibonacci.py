@@ -154,6 +154,7 @@ class FibonacciClock(Clock):
             box = self.BOXES[box_name]
             color = color_set[color_id-1] if color_id > 0 else self.BLACK
 
+            # print("%s => %s" % (box_name, color))
             self._strip.set(box, color)
 
     def __number_to_boxes(self, number):
