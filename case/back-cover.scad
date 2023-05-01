@@ -6,6 +6,8 @@ use <parts.scad>
 include <units.scad>
 include <variables.scad>
 
+usb_plug_h = 17;
+usb_plug_w = 11;
 back_depth = 1.5*cm;
 
 for (pos = sh_positions) {
@@ -37,6 +39,10 @@ difference () {
     }
 
     // Vertical slit in middle
-    translate([(case_width/2)-wall, wall_offset, -wall])
-        cube([slit_height, case_height-(wall_offset*2), wall*3]);
+    // translate([(case_width/2)-wall+.5, usb_plug_h+2, -wall])
+    //     cube([slit_height, case_height - 25, wall*3]);
+
+    // Gap for USB connector
+    translate([(case_width/2)-(usb_plug_w/2), -1, -1])
+        cube([usb_plug_w,usb_plug_h+1,back_depth+2]);
 }
