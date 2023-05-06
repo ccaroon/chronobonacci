@@ -53,8 +53,8 @@ class Clock:
 
         update_display = now_secs - self.__last_update >= self.UPDATE_FREQ
         if update_display:
-            print("%s - %02d:%02d:%02d" % (type(self).__name__, now[3], now[4], now[5]))
             self.__last_update = now_secs
+            print("%s - %02d:%02d:%02d %s" % (type(self).__name__, now[3], now[4], now[5], "(Update)" if update_display else ""))
 
         self._tick(update_display)
         self._strip.update()
